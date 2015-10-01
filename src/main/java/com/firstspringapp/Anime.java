@@ -1,18 +1,10 @@
 package com.firstspringapp;
 
-import lombok.AccessLevel;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.AllArgsConstructor;
+import lombok.Data;
 
-
-public class Anime {
-
-	private String id;
-	private String gid;
-	private String type;
-	private String name;
-	private String precision;
-	private String vintage;
-	
-	
+@AllArgsConstructor
+public @Data class Anime {
+	private int id;
+	private String gid, type, name, precision, vintage;
 }
